@@ -5,7 +5,7 @@ authors = [
 	"Sebastian Posur <sebastian.posur@uni-muenster.de>",
 	"Fabian Zickgraf <f.zickgraf@dashdos.com>",
 ]
-version = "0.1.7"
+version = "0.1.8"
 
 [deps]
 MatricesForHomalg = "29b9b1b6-efa6-450e-8188-a5a2c25df071"
