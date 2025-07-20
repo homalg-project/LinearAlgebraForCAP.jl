@@ -66,13 +66,13 @@
     
     if (ValueOption( "no_precompiled_code" ) == true)
         
-        if (IsPackageMarkedForLoading( "FreydCategoriesForCAP", ">= 2022.10-14" ))
+        if (IsPackageMarkedForLoading( "AdditiveClosuresForCAP", ">= 2025.06-01" ))
             
             category = MatrixCategory_as_CategoryOfRows( homalg_field );
             
         else
             
-            Error( "To get a version of `MatrixCategory` without precompiled code, the package `FreydCategoriesForCAP` is required." );
+            Error( "To get a version of `MatrixCategory` without precompiled code, the package `AdditiveClosuresForCAP` is required." );
             
         end;
         

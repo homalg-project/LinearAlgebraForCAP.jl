@@ -377,7 +377,7 @@ julia> pi2 = ProjectionInFactorOfDirectSum( [ V3, V1 ], 1 );
 
 julia> value1 = ApplyFunctor( F, pi1, pi2 );
 
-julia> input = ProductCategoryMorphism( AsCapCategory( Source( F ) ), [ pi1, Opposite( pi2 ) ] );
+julia> input = ProductCategoryMorphism( SourceOfFunctor( F ), [ pi1, Opposite( pi2 ) ] );
 
 julia> value2 = ApplyFunctor( F, input );
 
@@ -392,7 +392,7 @@ julia> F_installation( input );
 
 julia> F_installationOnObjects( V1, V1 );
 
-julia> F_installationOnObjects( ProductCategoryObject( AsCapCategory( Source( F ) ), [ V1, Opposite( V1 ) ] ) );
+julia> F_installationOnObjects( ProductCategoryObject( SourceOfFunctor( F ), [ V1, Opposite( V1 ) ] ) );
 
 julia> F_installationOnMorphisms( pi1, pi2 );
 
@@ -404,7 +404,7 @@ julia> AddObjectFunction( F2, a -> obj_func( a[1], Opposite( a[2] ) ) );
 
 julia> AddMorphismFunction( F2, function( source, datum, range ) return mor_func( source, datum[1], Opposite( datum[2] ), range ); end );
 
-julia> input = ProductCategoryMorphism( AsCapCategory( Source( F2 ) ), [ pi1, Opposite( pi2 ) ] );
+julia> input = ProductCategoryMorphism( SourceOfFunctor( F2 ), [ pi1, Opposite( pi2 ) ] );
 
 julia> value3 = ApplyFunctor( F2, input );
 
@@ -418,7 +418,7 @@ julia> InstallFunctor( F2, "F_installation2" );
 
 julia> F_installation2( input );
 
-julia> F_installation2OnObjects( ProductCategoryObject( AsCapCategory( Source( F2 ) ), [ V1, Opposite( V1 ) ] ) );
+julia> F_installation2OnObjects( ProductCategoryObject( SourceOfFunctor( F2 ), [ V1, Opposite( V1 ) ] ) );
 
 julia> F_installation2OnMorphisms( input );
 
