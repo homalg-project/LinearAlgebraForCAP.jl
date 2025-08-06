@@ -1,6 +1,6 @@
 
 ```jldoctest AutoDocTests
-julia> using MatricesForHomalg; using CAP; using MonoidalCategories; using LinearAlgebraForCAP
+julia> using MatricesForHomalg, CAP, MonoidalCategories, LinearAlgebraForCAP
 
 julia> true
 true
@@ -33,7 +33,7 @@ julia> alpha = VectorSpaceMorphism( a, homalg_matrix, b )
 ```
 
 ```jldoctest AutoDocTests
-julia> using MatricesForHomalg; using CAP; using MonoidalCategories; using LinearAlgebraForCAP
+julia> using MatricesForHomalg, CAP, MonoidalCategories, LinearAlgebraForCAP
 
 julia> alphap = homalg_matrix/vec;
 
@@ -92,7 +92,7 @@ julia> u = UniversalMorphismFromDirectSum( [ b, b ], [ i1, i2 ] )
 ```
 
 ```jldoctest AutoDocTests
-julia> using MatricesForHomalg; using CAP; using MonoidalCategories; using LinearAlgebraForCAP
+julia> using MatricesForHomalg, CAP, MonoidalCategories, LinearAlgebraForCAP
 
 julia> KernelObjectFunctorial( u, IdentityMorphism( Source( u ) ), u ) == IdentityMorphism( MatrixCategoryObject( vec, 3 ) )
 true
@@ -274,7 +274,7 @@ julia> d = MatrixCategoryObject( vec, 1 )
 ```
 
 ```jldoctest AutoDocTests
-julia> using MatricesForHomalg; using CAP; using MonoidalCategories; using LinearAlgebraForCAP
+julia> using MatricesForHomalg, CAP, MonoidalCategories, LinearAlgebraForCAP
 
 julia> pre_compose = MonoidalPreComposeMorphism( a, b, c )
 <A morphism in Category of matrices over Q>
@@ -345,7 +345,7 @@ true
 ```
 
 ```jldoctest AutoDocTests
-julia> using MatricesForHomalg; using CAP; using MonoidalCategories; using LinearAlgebraForCAP
+julia> using MatricesForHomalg, CAP, MonoidalCategories, LinearAlgebraForCAP
 
 julia> true
 true
@@ -425,7 +425,7 @@ julia> F_installation2OnMorphisms( input );
 ```
 
 ```jldoctest AutoDocTests
-julia> using MatricesForHomalg; using CAP; using MonoidalCategories; using LinearAlgebraForCAP
+julia> using MatricesForHomalg, CAP, MonoidalCategories, LinearAlgebraForCAP
 
 julia> true
 true
@@ -544,7 +544,7 @@ true
 ```
 
 ```jldoctest AutoDocTests
-julia> using MatricesForHomalg; using CAP; using MonoidalCategories; using LinearAlgebraForCAP
+julia> using MatricesForHomalg, CAP, MonoidalCategories, LinearAlgebraForCAP
 
 julia> field = HomalgFieldOfRationals( );
 
@@ -644,7 +644,7 @@ true
 ```
 
 ```jldoctest AutoDocTests
-julia> using MatricesForHomalg; using CAP; using MonoidalCategories; using LinearAlgebraForCAP
+julia> using MatricesForHomalg, CAP, MonoidalCategories, LinearAlgebraForCAP
 
 julia> field = HomalgFieldOfRationals( );
 
@@ -687,7 +687,7 @@ true
 ```
 
 ```jldoctest AutoDocTests
-julia> using MatricesForHomalg; using CAP; using MonoidalCategories; using LinearAlgebraForCAP
+julia> using MatricesForHomalg, CAP, MonoidalCategories, LinearAlgebraForCAP
 
 julia> true
 true
@@ -761,7 +761,7 @@ true
 ```
 
 ```jldoctest AutoDocTests
-julia> using MatricesForHomalg; using CAP; using MonoidalCategories; using LinearAlgebraForCAP
+julia> using MatricesForHomalg, CAP, MonoidalCategories, LinearAlgebraForCAP
 
 julia> field = HomalgFieldOfRationals( );
 
@@ -822,7 +822,7 @@ true
 ```
 
 ```jldoctest AutoDocTests
-julia> using MatricesForHomalg; using CAP; using MonoidalCategories; using LinearAlgebraForCAP
+julia> using MatricesForHomalg, CAP, MonoidalCategories, LinearAlgebraForCAP
 
 julia> true
 true
@@ -886,7 +886,7 @@ true
 ```
 
 ```jldoctest AutoDocTests
-julia> using MatricesForHomalg; using CAP; using MonoidalCategories; using LinearAlgebraForCAP
+julia> using MatricesForHomalg, CAP, MonoidalCategories, LinearAlgebraForCAP
 
 julia> field = HomalgFieldOfRationals( );
 
@@ -926,7 +926,7 @@ true
 ```
 
 ```jldoctest AutoDocTests
-julia> using MatricesForHomalg; using CAP; using MonoidalCategories; using LinearAlgebraForCAP
+julia> using MatricesForHomalg, CAP, MonoidalCategories, LinearAlgebraForCAP
 
 julia> true
 true
@@ -964,7 +964,7 @@ julia> Display( EntriesOfHomalgMatrixAsListList( UnderlyingMatrix( gamma ) ) )
 ```
 
 ```jldoctest AutoDocTests
-julia> using MatricesForHomalg; using CAP; using MonoidalCategories; using LinearAlgebraForCAP
+julia> using MatricesForHomalg, CAP, MonoidalCategories, LinearAlgebraForCAP
 
 julia> Q = HomalgFieldOfRationals();
 
@@ -1000,7 +1000,7 @@ julia> KernelEmbedding( alpha )
 ```
 
 ```jldoctest AutoDocTests
-julia> using MatricesForHomalg; using CAP; using MonoidalCategories; using LinearAlgebraForCAP
+julia> using MatricesForHomalg, CAP, MonoidalCategories, LinearAlgebraForCAP
 
 julia> Q = HomalgFieldOfRationals();
 
@@ -1033,7 +1033,7 @@ false
 ```
 
 ```jldoctest AutoDocTests
-julia> using MatricesForHomalg; using CAP; using MonoidalCategories; using LinearAlgebraForCAP
+julia> using MatricesForHomalg, CAP, MonoidalCategories, LinearAlgebraForCAP
 
 julia> Q = HomalgFieldOfRationals();
 
@@ -1075,7 +1075,7 @@ true
 ```
 
 ```jldoctest AutoDocTests
-julia> using MatricesForHomalg; using CAP; using MonoidalCategories; using LinearAlgebraForCAP
+julia> using MatricesForHomalg, CAP, MonoidalCategories, LinearAlgebraForCAP
 
 julia> Q = HomalgFieldOfRationals();
 
@@ -1108,7 +1108,7 @@ julia> p2 = ProjectionInFactorOfFiberProduct( [ AtoC, BtoC ], 2 )
 ```
 
 ```jldoctest AutoDocTests
-julia> using MatricesForHomalg; using CAP; using MonoidalCategories; using LinearAlgebraForCAP
+julia> using MatricesForHomalg, CAP, MonoidalCategories, LinearAlgebraForCAP
 
 julia> true
 true

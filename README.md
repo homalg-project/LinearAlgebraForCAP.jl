@@ -9,9 +9,9 @@
 
 <!-- END HEADER -->
 
-This is the Julia version of the [CAP-based][CAP_project] package [LinearAlgebraForCAP][LinearAlgebraForCAP].
+This is the Julia version of the [CAP-based][CAP_based] package [LinearAlgebraForCAP][LinearAlgebraForCAP].
 
-[CAP_project]: https://homalg-project.github.io/docs/CAP_project-based/
+[CAP_based]: https://homalg-project.github.io/docs/CAP_project-based/
 [LinearAlgebraForCAP]: https://homalg-project.github.io/pkg/LinearAlgebraForCAP
 
 <!-- BEGIN FOOTER -->

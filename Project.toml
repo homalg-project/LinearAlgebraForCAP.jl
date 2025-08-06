@@ -1,16 +1,22 @@
 name = "LinearAlgebraForCAP"
 uuid = "3dc4824f-14ac-4ab7-8a60-75dbcd4a9d60"
 authors = [
-	"Sebastian Gutsche <sebastian.gutsche@gmail.com>",
-	"Sebastian Posur <sebastian.posur@uni-muenster.de>",
-	"Fabian Zickgraf <f.zickgraf@dashdos.com>",
+	"Sebastian Gutsche <gutsche@mathematik.uni-siegen.de>",
+	"Sebastian Posur <sebastian.posur@uni-siegen.de>",
+	"Fabian Zickgraf <fabian.zickgraf@uni-siegen.de>"
 ]
-version = "0.1.9"
+
+# Transpiled from GAP's LinearAlgebraForCAP v2025.07-03
+version = "0.1.10"
 
 [deps]
 MatricesForHomalg = "29b9b1b6-efa6-450e-8188-a5a2c25df071"
 CAP = "d64df2ee-d2bb-46f4-8cbc-f03bb858f8cb"
 MonoidalCategories = "bfd98c86-782f-4b94-909f-74167f1eb613"
+
+[weakdeps]
+
+[extensions]
 
 [compat]
 julia = "1.11"
@@ -19,8 +25,8 @@ CAP = "0.6"
 MonoidalCategories = "0.2"
 
 [extras]
-Documenter = "e30172f5-a6a5-5a46-863b-614d45cd2de4"
 Test = "8dfed614-e22c-5e08-85e1-65c5234f0b40"
+Documenter = "e30172f5-a6a5-5a46-863b-614d45cd2de4"
 
 [targets]
 test = ["Test", "Documenter"]

@@ -1,2 +1,4 @@
 using Test, Documenter, LinearAlgebraForCAP
-doctest(LinearAlgebraForCAP)
+
+# test upto whitespaces
+doctest(LinearAlgebraForCAP; doctestfilters=[r"\s+" => ""])
