@@ -59,6 +59,17 @@ function ConvertColumnToMatrix( mat::MatricesForHomalg.TypeOfMatrixForHomalg, r:
 	
 end
 
+import MatricesForHomalg.UnionOfRows
+import MatricesForHomalg.UnionOfColumns
+
+function UnionOfRows(list::MatricesForHomalg.TypeOfMatrixForHomalg...)::MatricesForHomalg.TypeOfMatrixForHomalg
+  UnionOfRows(HomalgRing(list[1]), NrCols(list[1]), list)
+end
+
+function UnionOfColumns(list::MatricesForHomalg.TypeOfMatrixForHomalg...)::MatricesForHomalg.TypeOfMatrixForHomalg
+  UnionOfColumns(HomalgRing(list[1]), NrRows(list[1]), list)
+end
+
 function EntriesOfHomalgMatrix( mat::MatricesForHomalg.TypeOfMatrixForHomalg )
 	vcat(EntriesOfHomalgMatrixAsListList(mat)...)
 end

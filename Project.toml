@@ -7,7 +7,7 @@ authors = [
 ]
 
 # Transpiled from GAP's LinearAlgebraForCAP v2025.07-03
-version = "0.1.10"
+version = "0.1.11"
 
 [deps]
 MatricesForHomalg = "29b9b1b6-efa6-450e-8188-a5a2c25df071"
