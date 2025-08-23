@@ -51,11 +51,13 @@
     
     SetIsAbelianCategoryWithEnoughInjectives( category, true );
     
+    SetIsStrictMonoidalCategory( category, true );
+    
+    SetIsAdditiveMonoidalCategory( category, true );
+    
     SetIsRigidSymmetricClosedMonoidalCategory( category, true );
     
     SetIsRigidSymmetricCoclosedMonoidalCategory( category, true );
-    
-    SetIsStrictMonoidalCategory( category, true );
     
     SetIsLinearCategoryOverCommutativeRingWithFinitelyGeneratedFreeExternalHoms( category, true );
     
