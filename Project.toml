@@ -1,12 +1,12 @@
 name = "LinearAlgebraForCAP"
 uuid = "3dc4824f-14ac-4ab7-8a60-75dbcd4a9d60"
 authors = [
-	"Sebastian Gutsche <gutsche@mathematik.uni-siegen.de>",
-	"Sebastian Posur <sebastian.posur@uni-siegen.de>",
-	"Fabian Zickgraf <fabian.zickgraf@uni-siegen.de>"
+	"Sebastian Gutsche <sebastian.gutsche@gmail.com>",
+	"Sebastian Posur <sebastian.posur@uni-muenster.de>",
+	"Fabian Zickgraf <f.zickgraf@dashdos.com>"
 ]
 
-# Transpiled from GAP's LinearAlgebraForCAP v2025.08-01
+# Transpiled from GAP's LinearAlgebraForCAP v2025.08-02
 version = "0.1.12"
 
 [deps]
