@@ -833,23 +833,36 @@ julia> vec = MatrixCategory( QQ );
 
 julia> op = Opposite( vec );
 
-julia> Display( ListKnownCategoricalProperties( op ) )
-[ "IsAbCategory", "IsAbelianCategory", "IsAbelianCategoryWithEnoughInjectives"
-    , "IsAbelianCategoryWithEnoughProjectives", "IsAdditiveCategory",
-  "IsAdditiveMonoidalCategory", "IsBraidedMonoidalCategory",
-  "IsCategoryWithCoequalizers", "IsCategoryWithCokernels",
-  "IsCategoryWithEqualizers", "IsCategoryWithInitialObject",
-  "IsCategoryWithKernels", "IsCategoryWithTerminalObject",
-  "IsCategoryWithZeroObject", "IsClosedMonoidalCategory",
-  "IsCoclosedMonoidalCategory", "IsEnrichedOverCommutativeRegularSemigroup",
-  "IsEquippedWithHomomorphismStructure", "IsLinearCategoryOverCommutativeRing"
-    ,
-  "IsLinearCategoryOverCommutativeRingWithFinitelyGeneratedFreeExternalHoms",
-  "IsMonoidalCategory", "IsPreAbelianCategory",
-  "IsRigidSymmetricClosedMonoidalCategory",
-  "IsRigidSymmetricCoclosedMonoidalCategory", "IsSkeletalCategory",
-  "IsStrictMonoidalCategory", "IsSymmetricClosedMonoidalCategory",
-  "IsSymmetricCoclosedMonoidalCategory", "IsSymmetricMonoidalCategory" ]
+julia> Perform( ListKnownCategoricalProperties( op ), Display )
+IsAbCategory
+IsAbelianCategory
+IsAbelianCategoryWithEnoughInjectives
+IsAbelianCategoryWithEnoughProjectives
+IsAdditiveCategory
+IsAdditiveMonoidalCategory
+IsBraidedMonoidalCategory
+IsCategoryWithCoequalizers
+IsCategoryWithCokernels
+IsCategoryWithEqualizers
+IsCategoryWithInitialObject
+IsCategoryWithKernels
+IsCategoryWithTerminalObject
+IsCategoryWithZeroObject
+IsClosedMonoidalCategory
+IsCoclosedMonoidalCategory
+IsEnrichedOverCommutativeRegularSemigroup
+IsEquippedWithHomomorphismStructure
+IsLinearCategoryOverCommutativeRing
+IsLinearCategoryOverCommutativeRingWithFinitelyGeneratedFreeExternalHoms
+IsMonoidalCategory
+IsPreAbelianCategory
+IsRigidSymmetricClosedMonoidalCategory
+IsRigidSymmetricCoclosedMonoidalCategory
+IsSkeletalCategory
+IsStrictMonoidalCategory
+IsSymmetricClosedMonoidalCategory
+IsSymmetricCoclosedMonoidalCategory
+IsSymmetricMonoidalCategory
 
 julia> V1 = Opposite( TensorUnit( vec ) );
 

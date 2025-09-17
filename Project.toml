@@ -6,7 +6,7 @@ authors = [
 	"Fabian Zickgraf <f.zickgraf@dashdos.com>"
 ]
 
-# Transpiled from GAP's LinearAlgebraForCAP v2025.08-02
+# Transpiled from GAP's LinearAlgebraForCAP v2025.09-01
 version = "0.1.12"
 
 [deps]
