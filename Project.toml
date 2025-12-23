@@ -6,8 +6,8 @@ authors = [
 	"Fabian Zickgraf <f.zickgraf@dashdos.com>"
 ]
 
-# Transpiled from GAP's LinearAlgebraForCAP v2025.09-01
-version = "0.1.13"
+# Transpiled from GAP's LinearAlgebraForCAP v2025.12-01
+version = "0.1.14"
 
 [deps]
 MatricesForHomalg = "29b9b1b6-efa6-450e-8188-a5a2c25df071"
