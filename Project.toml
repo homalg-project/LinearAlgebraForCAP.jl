@@ -6,8 +6,8 @@ authors = [
 	"Fabian Zickgraf <f.zickgraf@dashdos.com>"
 ]
 
-# Transpiled from GAP's LinearAlgebraForCAP v2025.12-01
-version = "0.1.14"
+# Transpiled from GAP's LinearAlgebraForCAP v2026.02-01
+version = "0.1.15"
 
 [deps]
 MatricesForHomalg = "29b9b1b6-efa6-450e-8188-a5a2c25df071"
@@ -21,7 +21,7 @@ MonoidalCategories = "bfd98c86-782f-4b94-909f-74167f1eb613"
 [compat]
 julia = "1.11"
 MatricesForHomalg = "0.1"
-CAP = "0.6"
+CAP = "~0.6.19"
 MonoidalCategories = "~0.2.11"
 
 [extras]
