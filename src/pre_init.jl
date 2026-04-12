@@ -1,4 +1,6 @@
 # TODO: Relocate these functions to MatricesForHomalg for a better modularity
+const IsHomalgSemiring = Filter("IsHomalgSemiring", MatricesForHomalg.TypeOfRingForHomalg)
+
 const IsHomalgRing = Filter("IsHomalgRing", MatricesForHomalg.TypeOfRingForHomalg)
 
 const IsFieldForHomalg = Filter("IsFieldForHomalg", MatricesForHomalg.TypeOfFieldForHomalg)
@@ -10,6 +12,8 @@ end
 function HasIsFieldForHomalg(::MatricesForHomalg.TypeOfFieldForHomalg)
 	true
 end
+
+const IsHomalgSemiringElement = Filter("IsHomalgSemiringElement", MatricesForHomalg.TypeOfRingElementForHomalg)
 
 const IsHomalgRingElement = Filter("IsHomalgRingElement", MatricesForHomalg.TypeOfRingElementForHomalg)
 
