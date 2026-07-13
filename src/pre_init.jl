@@ -19,14 +19,6 @@ const IsHomalgRingElement = Filter("IsHomalgRingElement", MatricesForHomalg.Type
 
 const IsHomalgMatrix = Filter("IsHomalgMatrix", MatricesForHomalg.TypeOfMatrixForHomalg)
 
-function HasHasInvariantBasisProperty(::Union{typeof(MatricesForHomalg.ZZ), typeof(MatricesForHomalg.QQ)})
-	true
-end
-
-function HasInvariantBasisProperty(::Union{typeof(MatricesForHomalg.ZZ), typeof(MatricesForHomalg.QQ)})
-	true
-end
-
 # the following operations should be part of MatricesForHomalg.jl
 const NrRows = NumberRows
 const NrCols = NumberColumns
