@@ -6,10 +6,10 @@ authors = [
 	"Fabian Zickgraf <f.zickgraf@dashdos.com>"
 ]
 
-# Transpiled from GAP's LinearAlgebraForCAP v2026.06-02
+# Transpiled from GAP's LinearAlgebraForCAP v2026.10-01
 version = "0.2.5"
 
-# Current dependencies of GAP's LinearAlgebraForCAP v2026.06-02
+# Current dependencies of GAP's LinearAlgebraForCAP v2026.10-01
 # NeededOtherPackages:
 #   ToolsForHomalg >= 2026.04-01
 #   MatricesForHomalg >= 2026.04-01

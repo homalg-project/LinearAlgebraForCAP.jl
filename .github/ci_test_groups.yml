@@ -1,0 +1,9 @@
+# Every group is tested in its own CI job, which tests only the listed files of docs/src.
+# Every .md file in docs/src must be listed in a group.
+# After editing this file, run `make gen` to update .github/workflows/Test.yml.
+ci_test_groups:
+  - group: default
+    files:
+      - 200_FreydCategoriesForCAP.tst.autogen.md
+      - AutoDocTests.tst.autogen.md
+      - HomogeneousLinearSystems.tst.autogen.md
